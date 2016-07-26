@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <title>{% block title %}Our title is here!{% endblock %}</title>
     <meta name="keywords" content={% block keywords %}"设计"{% endblock %} />
+    <meta name="description" content="">
+    {% load staticfiles %}
+    <link rel="icon" href="{% static "images/favicon.ico" %}">
+    <link href="{% static "bootcss/bootstrap.css"%}" rel="stylesheet">
+    <link href="{% static "bootcss/navbar.css"%}" rel="stylesheet">
+    <link href="{% static "bootcss/jquery.js"%}" rel="stylesheet">
+    <link href="{% static "bootcss/bootstrap.js"%}" rel="stylesheet">
 </head>
 <body>
-
+<div class="container">
 {% block navi %}
 {% include 'navi.html' %}
 {% endblock %}
@@ -15,8 +22,11 @@
     Hi, this is the main content!
 {% endblock %}
 
-</body>
+
 {% block footer %}
     {% include 'footer.html' %}
 {% endblock %}
+
+</div>
+</body>
 </html>
