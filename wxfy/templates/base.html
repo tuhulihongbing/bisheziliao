@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Our title is here!{% endblock %}</title>
+    <meta name="keywords" content={% block keywords %}"设计"{% endblock %} />
+</head>
+<body>
+
+{% block navi %}
+{% include 'navi.html' %}
+{% endblock %}
+
+{% block content %}
+    Hi, this is the main content!
+{% endblock %}
+
+</body>
+{% block footer %}
+    {% include 'footer.html' %}
+{% endblock %}
+</html>
