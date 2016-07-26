@@ -11,16 +11,110 @@
             <div class="input-group">
                 <input type="text" class="form-control" placeholder="热门搜索：股权，买卖合同，劳动合同" id='search-key'>
                 <span class="input-group-btn">
-                <a class="btn" id='s-i-bt' href='javascript:search();' role="button"></a>
+                <a class="btn" id='s-i-bt'  href='javascript:search();' role="button"></a>
                 </span>
             </div><!-- /input-group -->
         </div>
     </div>
 
-    <br/>
-    <p class="btn btn-default">This is the content:wenxianfanyi,haiahia</p>
-    <br/>
-    {% load staticfiles %}
-    <img id="img" class="img-rounded" src="{% static "images/14.jpg" %}" alt="My image" style="width: 400px;height: 200px"/>
+<div class="container index-body">
+	<div class="row">
+		<!-- i-c-g index contract group -->
+		<div class='col-md-9 i-c-g'>
+
+			<!-- 股权 -->
+		<div class='col-md-4 col-sm-6 col-xs-6 i-c-item-outer'>
+		<div class='i-c-item'>
+			<a href='/contract/interest' title='股权相关协议'>
+				<div class='i-c-p i-c-p2'>
+					<h2 class='i-c-ph'>股权</h2>
+				</div>
+			</a>
+			<ul class='i-c-list'><li><a href='/diy/chuzixieyi' title='出资协议'>出资协议</a></li><li><a href='/diy/shoujuzhuangu' title='收据（转股）'>收据（转股）</a></li><li><a href='/diy/guquanzhuanrangxieyi' title='股权转让协议'>股权转让协议</a></li><li><a href='/diy/gudonghuijueyizengzi' title='股东会决议（增资）'>股东会决议（增资）</a></li></ul><a href='/contract/interest' class='more-bt'>更多></a></div></div><!-- 知识产权 -->
+		<div class='col-md-4 col-sm-6 col-xs-6 i-c-item-outer'>
+		<div class='i-c-item'>
+			<a href='/contract/cp' title='知识产权相关协议'>
+				<div class='i-c-p i-c-p7'>
+					<h2 class='i-c-ph'>知识产权</h2>
+				</div>
+			</a>
+			<ul class='i-c-list'><li><a href='/diy/zhuanlijishuxukehetong' title='专利技术许可合同'>专利技术许可合同</a></li><li><a href='/diy/zhuanlizhuanranghetong' title='专利转让合同'>专利转让合同</a></li><li><a href='/diy/shangbiaoxukeshiyonghetong' title='商标许可使用合同'>商标许可使用合同</a></li><li><a href='/diy/shangbiaozhuanranghetong' title='商标转让合同'>商标转让合同</a></li></ul><a href='/contract/cp' class='more-bt'>更多></a></div></div><!-- 人事 -->
+		<div class='col-md-4 col-sm-6 col-xs-6 i-c-item-outer'>
+		<div class='i-c-item'>
+			<a href='/contract/hr' title='人事相关协议'>
+				<div class='i-c-p i-c-p5'>
+					<h2 class='i-c-ph'>人事</h2>
+				</div>
+			</a>
+			<ul class='i-c-list'><li><a href='/diy/zaizhizhishichanquanhetong' title='在职知识产权合同'>在职知识产权合同</a></li><li><a href='/diy/laodonghetong' title='劳动合同'>劳动合同</a></li><li><a href='/diy/lizhixieyi' title='离职协议'>离职协议</a></li><li><a href='/diy/lizhizhengming' title='离职证明'>离职证明</a></li></ul><a href='/contract/hr' class='more-bt'>更多></a></div></div><!-- 金融 -->
+		<div class='col-md-4 col-sm-6 col-xs-6 i-c-item-outer'>
+		<div class='i-c-item'>
+			<a href='/contract/finance' title='金融相关协议'>
+				<div class='i-c-p i-c-p1'>
+					<h2 class='i-c-ph'>金融</h2>
+				</div>
+			</a>
+			<ul class='i-c-list'><li><a href='/diy/jiekuanhetong' title='借款合同'>借款合同</a></li><li><a href='/diy/shoujujiekuan' title='收据（借款）'>收据（借款）</a></li><li class='no-item'></li><li class='no-item'></li></ul></div></div><!-- 担保 -->
+		<div class='col-md-4 col-sm-6 col-xs-6 i-c-item-outer'>
+		<div class='i-c-item'>
+			<a href='/contract/guarantee' title='担保相关协议'>
+				<div class='i-c-p i-c-p4'>
+					<h2 class='i-c-ph'>担保</h2>
+				</div>
+			</a>
+			<ul class='i-c-list'><li><a href='/diy/baozhenghetong' title='保证合同'>保证合同</a></li><li><a href='/diy/diyahetong' title='抵押合同'>抵押合同</a></li><li><a href='/diy/zhiyahetong' title='质押合同'>质押合同</a></li></ul></div></div><!-- 房地产 -->
+		<div class='col-md-4 col-sm-6 col-xs-6 i-c-item-outer'>
+		<div class='i-c-item'>
+			<a href='/contract/estate' title='房地产相关协议'>
+				<div class='i-c-p i-c-p6'>
+					<h2 class='i-c-ph'>房地产</h2>
+				</div>
+			</a>
+			<ul class='i-c-list'><li><a href='/diy/shangpuzulinhetong' title='商铺租赁合同'>商铺租赁合同</a></li><li><a href='/diy/changdizulinhetongnongcun' title='场地租赁合同（农村）'>场地租赁合同（农村）</a></li><li><a href='/diy/zhanweizulinhetong' title='展位租赁合同'>展位租赁合同</a></li><li><a href='/diy/jianshegongchengchengbaohetong' title='建设工程承包合同'>建设工程承包合同</a></li></ul><a href='/contract/estate' class='more-bt'>更多></a></div></div><!-- 婚姻 -->
+		<div class='col-md-4 col-sm-6 col-xs-6 i-c-item-outer'>
+		<div class='i-c-item'>
+			<a href='/contract/marriage' title='婚姻相关协议'>
+				<div class='i-c-p i-c-p3'>
+					<h2 class='i-c-ph'>婚姻</h2>
+				</div>
+			</a>
+			<ul class='i-c-list'><li><a href='/diy/fuqihunhoucaichanyuedingshu' title='夫妻婚后财产约定书'>夫妻婚后财产约定书</a></li><li><a href='/diy/fuyangquanxieyi' title='抚养权协议'>抚养权协议</a></li><li><a href='/diy/lihunxieyibiaozhunban' title='离婚协议（标准版）'>离婚协议（标准版）</a></li><li><a href='/diy/lihunxieyijianyiban' title='离婚协议（简易版）'>离婚协议（简易版）</a></li></ul><a href='/contract/marriage' class='more-bt'>更多></a></div></div><!-- 买卖 -->
+		<div class='col-md-4 col-sm-6 col-xs-6 i-c-item-outer'>
+		<div class='i-c-item'>
+			<a href='/contract/sale' title='买卖相关协议'>
+				<div class='i-c-p i-c-p8'>
+					<h2 class='i-c-ph'>买卖</h2>
+				</div>
+			</a>
+			<ul class='i-c-list'><li><a href='/diy/ershoufangmaimaihetong' title='二手房买卖合同'>二手房买卖合同</a></li><li><a href='/diy/peiougongyouquanrentongyichushouzhengming' title='配偶（共有权人）同意出售证明'>配偶（共有权人）同意出售证明</a></li><li><a href='/diy/huowumaimaihetong' title='货物买卖合同'>货物买卖合同</a></li></ul></div></div><!-- 服务 -->
+		<div class='col-md-4 col-sm-6 col-xs-6 i-c-item-outer'>
+		<div class='i-c-item'>
+			<a href='/contract/service' title='服务相关协议'>
+				<div class='i-c-p i-c-p9'>
+					<h2 class='i-c-ph'>服务</h2>
+				</div>
+			</a>
+			<ul class='i-c-list'><li><a href='/diy/qiyefuwudailihetong' title='企业服务代理合同'>企业服务代理合同</a></li><li><a href='/diy/qingdianfuwuhetong' title='庆典服务合同'>庆典服务合同</a></li><li><a href='/diy/wuyefuwuhetong' title='物业服务合同'>物业服务合同</a></li></ul></div></div>
+			<div class='clearfix'></div>
+		</div>
+		<!-- end of i-c-g index contract group -->
+
+		<!-- i-t-g index topic group -->
+		<div class='col-md-3 i-t-g'>
+
+			<a class='col-md-12 col-sm-6 col-xs-6 i-g-item i-g-3' href='/topic/ipo' title='上市公司合同专题'>
+						<h2 class='i-c-ph'>上市公司</h2>
+					</a><a class='col-md-12 col-sm-6 col-xs-6 i-g-item i-g-1' href='/topic/startup' title='创业公司合同专题'>
+						<h2 class='i-c-ph'>创业公司</h2>
+					</a><a class='col-md-12 col-sm-6 col-xs-6 i-g-item i-g-2' href='/topic/graduate' title='毕业季合同专题'>
+						<h2 class='i-c-ph'>毕业季</h2>
+					</a>
+			<div class='clearfix'></div>
+		</div>
+		<!-- end of i-t-g index contract group -->
+
+	</div>
+</div>
+
 {% endblock %}
 
